@@ -8,10 +8,9 @@ import java.util.regex.Pattern;
 
 public class Task2_12 {
     public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Введите строку:");
-//        String s  = scanner.nextLine();
-        String s = "strIng01";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите строку:");
+        String s  = scanner.nextLine();
         System.out.println(s);
         if (Pattern.matches("^[_\\D&&\\w][\\w]*$", s)) {
             if (Pattern.matches(".[a-zA-Z0-9]*$", s)) {
