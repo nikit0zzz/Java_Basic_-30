@@ -17,14 +17,25 @@ public class Task2_11 {
         String s2=String.valueOf(b);
 
         System.out.println(s1.length());
-        int i, j;
+        int i, j, k;
+        String s3;
+        s3 = "";
         System.out.println("Строка 1 состоит из " + s1.length() + " символов :");
         for (i = 0; i < s1.length(); i++){
             System.out.println(s1.charAt(i));
         }
         System.out.println("Строка 2 состоит из " + s2.length() + " символов :");
-        for (j = 0; j < s2.length(); j++){
-            System.out.println(s2.charAt(j));
+
+
+
+        for (j = 0; j < s1.length(); j++){
+            for (k = 0; k < s2.length(); k++){
+                if(s1.charAt(j) == s2.charAt(k)){
+                    System.out.println("Совпадение: " + s1.charAt(j));
+                    s3 = s3 + ' ' +s1.charAt(j);
+                }
+            }
         }
+        System.out.println("Совпали числа: " + s3);
     }
 }
