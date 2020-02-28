@@ -32,9 +32,7 @@ public class Task2_11 {
             for (k = 0; k < s2.length(); k++){
                 if(s1.charAt(j) == s2.charAt(k)){
                     System.out.println("Совпадение: " + s1.charAt(j));
-                    if(s3.contains(String.valueOf(s1.charAt(j)))){
-                        System.out.println("Уже было");
-                    } else {
+                    if(!s3.contains(String.valueOf(s1.charAt(j)))){
                         s3  = s3 + " " + s1.charAt(j);
                     }
                 }
