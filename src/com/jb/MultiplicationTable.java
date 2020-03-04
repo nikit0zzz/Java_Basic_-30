@@ -25,6 +25,11 @@ public class MultiplicationTable {
         }
         System.out.println("right_answers = " + right_answers);
         System.out.println("bad_answer = " + bad_answer);
-        System.out.println("Вы правильно ответили на " + (Math.round((Math.floor(right_answers)/Math.floor(bad_answer) * 100))) +"% вопросов");
+        System.out.println("Вы правильно ответили на " + (Math.round((Math.floor(right_answers)/Math.floor(examples) * 100))) +"% вопросов");
+        if(Math.round((Math.floor(right_answers)/Math.floor(examples) * 100)) <= 97){
+            System.out.println("Чмо необразованное");
+        } else {
+            System.out.println("Эйнштейн!!!");
+        }
     }
 }
