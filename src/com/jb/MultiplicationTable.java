@@ -20,7 +20,7 @@ public class MultiplicationTable {
                 System.out.println("Верно!");
                 right_answers++;
             } else {
-                System.out.println("Неудачник!");
+                System.out.println("Не правильный ответ!");
                 bad_answer++;
             }
         }
@@ -28,9 +28,9 @@ public class MultiplicationTable {
         System.out.println("Вы дали правильный ответ " + bad_answer + " раз");
         System.out.println("Вы дали правильный ответ в " + (Math.round((Math.floor(right_answers)/Math.floor(examples) * 100))) +"% случаев");
         if(Math.round((Math.floor(right_answers)/Math.floor(examples) * 100)) <= 97){
-            System.out.println("Вы дали правильный ответ в " + (Math.round((Math.floor(right_answers)/Math.floor(examples) * 100))) +"% случаев и вы чмо необразованное");
+            System.out.println("Вы дали правильный ответ в " + (Math.round((Math.floor(right_answers)/Math.floor(examples) * 100))) +"% случаев и вы провалили тест");
         } else {
-            System.out.println("Вы дали правильный ответ в " + (Math.round((Math.floor(right_answers)/Math.floor(examples) * 100))) + "% случаев и вы Эйнштейн!!!");
+            System.out.println("Вы дали правильный ответ в " + (Math.round((Math.floor(right_answers)/Math.floor(examples) * 100))) + "% случаев и вы прошли тест");
         }
     }
 }
