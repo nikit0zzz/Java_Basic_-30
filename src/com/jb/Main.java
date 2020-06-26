@@ -6,3 +6,4 @@ public class Main {
 	// write your code here
     }
 }
+// задания модуля 3 зачтены, но только не плюйте на code convention, пожалуйтса
